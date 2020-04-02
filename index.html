@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HW2</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="js/script.js" async></script>
+</head>
+
+<body>
+<div class="header">
+    <h1>Gap Minder Inspired World Health Data</h1>
+</div>
+<h1 class="year">2000</h1>
+<div class="plot">
+    <svg id="scatter-plot"></svg>
+    <div class="side-pan">
+        <div class="selectors">
+            <div>radius:<select id='radius'>
+                <option value="gdp">gdp</option>
+                <option value="child-mortality">child-morality</option>
+                <option value="fertility-rate">fertility-rate</option>
+                <option value="life-expectancy">life-expectancy</option>
+                <option value="population">population</option>
+            </select></div>
+            <div>x:<select id ='x_selector'>
+                <option value="fertility-rate">fertility-rate</option>
+                <option value="child-mortality">child-morality</option>
+                <option value="gdp">gdp</option>
+                <option value="life-expectancy">life-expectancy</option>
+                <option value="population">population</option>
+            </select></div>
+            <div>y:<select id ='y_selector'>
+                <option value="child-mortality">child-morality</option>
+                <option value="fertility-rate">fertility-rate</option>
+                <option value="gdp">gdp</option>
+                <option value="life-expectancy">life-expectancy</option>
+                <option value="population">population</option>
+            </select></div>
+            <!-- Part 3: axis parameter selectors -->
+        </div>
+    </div>
+</div>
+<div class="range-control">
+    <input type="range" class="slider" min="1800" max="2020" value="2000"/>
+</div>
+</body>
+
+</html>
